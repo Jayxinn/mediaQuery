@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-color: rgba(187, 199, 235, 0.575);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 318px 318px ; 
+    grid-template-areas: 
+    "aa aa aa aa aa aa bb bb bb cc cc cc"
+    "dd dd dd ee ee ee ee ee ee cc cc cc"
+    ;
+    padding: 30px;
+    gap: 20px;
+}
+.box1{
+    background-color: rgba(131, 4, 250, 0.747);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 90% 0% ;
+    background-blend-mode: multiply;
+    
+}
+.box{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+}
+.picImage{
+    display: flex;
+    gap: 30px;
+}
+
+.box1{
+    /* background-color: rgba(190, 190, 31, 0.411); */
+    grid-area: aa;
+}
+.box2{
+    background-color: gray;
+    grid-area: bb;
+}
+.box3{
+    background-color: rgb(255, 255, 255);
+    grid-area: cc;
+}
+.box4{
+    background-color: rgb(255, 255, 255);
+    grid-area: dd;
+}
+.executiveImage{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box5{
+    background-color: rgb(54, 54, 27);
+    grid-area: ee;
+}
+.box6{
+    background-color: rgb(199, 199, 197);
+    grid-area: ff;
+}
+.executiveName{
+    margin-top: 10px;
+}
+.aboutPerson{
+    color: rgb(54, 52, 52);
+}
+@media screen and (max-width : 481px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
